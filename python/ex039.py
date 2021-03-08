@@ -1,9 +1,12 @@
 from datetime import  date
 atual = date.today().year
-nasc = int(input('Anos de nascimento: '))
+sexo = str(input('Informe M para masculino e F para feminino: '))
+nasc = int(input('Ano de nascimento: '))
 idade = atual - nasc
 print('Quem nasceu em {} tem {} em {}.'.format(nasc, idade, atual))
-if idade == 18:
+if sexo == 'F':
+    print('Você não prescisa se alistar')
+elif idade == 18:
     print('Você tem que se alistar IMEDIATAMENTE!')
 elif idade < 18:
     saldo = 18 - idade
