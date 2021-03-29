@@ -1,5 +1,7 @@
-from time import sleep
-for c in range(10, 0, -1):
-    sleep(1)
-    print(c)
-print('BBOOOMMMMMMM!!! FELIZ ANO NOVO!!!')
+for c in range(0, 50):
+    resto = c % 2
+    if resto == 0:
+        print(c)
+    else:
+        print('-,-')
+print('FIM')
